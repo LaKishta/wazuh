@@ -24,13 +24,19 @@ struct AgentSyncProtocolWrapper
     /// @param db_path Path to the SQLite database file for this protocol instance.
     /// @param logger Logger function
     /// @param mq_funcs Structure containing the MQ callback functions provided from C.
-    AgentSyncProtocolWrapper(const std::string& module, const std::string& db_path, const MQ_Functions& mq_funcs, LoggerFunc logger, unsigned int syncEndDelayMs)
-        : impl(std::make_unique<AgentSyncProtocol>(module, db_path, mq_funcs, std::move(logger), nullptr, syncEndDelayMs)) {}
+    /// @param syncEndDelay Delay in seconds for synchronization messages.
+    /// @param timeout Default timeout for synchronization operations.
+    /// @param retries Default number of retries for synchronization operations.
+    /// @param maxEps Default maximum events per second for synchronization operations.
+    AgentSyncProtocolWrapper(const std::string& module, const std::string& db_path, const MQ_Functions& mq_funcs, LoggerFunc logger, std::chrono::seconds syncEndDelay, std::chrono::seconds timeout,
+                             unsigned int retries, size_t maxEps)
+        : impl(std::make_unique<AgentSyncProtocol>(module, db_path, mq_funcs, std::move(logger), syncEndDelay, timeout, retries, maxEps, nullptr)) {}
 };
 
 extern "C" {
 
-    AgentSyncProtocolHandle* asp_create(const char* module, const char* db_path, const MQ_Functions* mq_funcs, asp_logger_t logger, unsigned int syncEndDelayMs)
+    AgentSyncProtocolHandle* asp_create(const char* module, const char* db_path, const MQ_Functions* mq_funcs, asp_logger_t logger, unsigned int syncEndDelay, unsigned int timeout, unsigned int retries,
+                                        size_t maxEps)
     {
         try
         {
@@ -50,7 +56,8 @@ extern "C" {
                 logger(level, msg.c_str());
             };
 
-            return reinterpret_cast<AgentSyncProtocolHandle*>(new AgentSyncProtocolWrapper(module, db_path, *mq_funcs, logger_wrapper, syncEndDelayMs));
+            return reinterpret_cast<AgentSyncProtocolHandle*>(new AgentSyncProtocolWrapper(module, db_path, *mq_funcs, logger_wrapper, std::chrono::seconds(syncEndDelay), std::chrono::seconds(timeout), retries,
+                                                                                           maxEps));
         }
         catch (const std::exception& ex)
         {
@@ -131,20 +138,14 @@ extern "C" {
     }
 
     bool asp_sync_module(AgentSyncProtocolHandle* handle,
-                         Mode_t mode,
-                         unsigned int sync_timeout,
-                         unsigned int retries,
-                         size_t max_eps)
+                         Mode_t mode)
     {
         try
         {
             if (!handle) return false;
 
             auto* wrapper = reinterpret_cast<AgentSyncProtocolWrapper*>(handle);
-            return wrapper->impl->synchronizeModule(static_cast<Mode>(mode),
-                                                    std::chrono::seconds(sync_timeout),
-                                                    retries,
-                                                    max_eps);
+            return wrapper->impl->synchronizeModule(static_cast<Mode>(mode));
         }
         catch (const std::exception& ex)
         {
@@ -158,21 +159,14 @@ extern "C" {
 
     bool asp_requires_full_sync(AgentSyncProtocolHandle* handle,
                                 const char* index,
-                                const char* checksum,
-                                unsigned int sync_timeout,
-                                unsigned int retries,
-                                size_t max_eps)
+                                const char* checksum)
     {
         try
         {
             if (!handle || !index || !checksum) return false;
 
             auto* wrapper = reinterpret_cast<AgentSyncProtocolWrapper*>(handle);
-            return wrapper->impl->requiresFullSync(index,
-                                                   checksum,
-                                                   std::chrono::seconds(sync_timeout),
-                                                   retries,
-                                                   max_eps);
+            return wrapper->impl->requiresFullSync(index, checksum);
         }
         catch (const std::exception& ex)
         {
@@ -226,9 +220,6 @@ extern "C" {
                                      Mode_t mode,
                                      const char** indices,
                                      size_t indices_count,
-                                     unsigned int sync_timeout,
-                                     unsigned int retries,
-                                     size_t max_eps,
                                      uint64_t global_version)
     {
         try
@@ -253,9 +244,6 @@ extern "C" {
 
             return wrapper->impl->synchronizeMetadataOrGroups(static_cast<Mode>(mode),
                                                               indices_vec,
-                                                              std::chrono::seconds(sync_timeout),
-                                                              retries,
-                                                              max_eps,
                                                               global_version);
         }
         catch (const std::exception& ex)
@@ -270,10 +258,7 @@ extern "C" {
 
     bool asp_notify_data_clean(AgentSyncProtocolHandle* handle,
                                const char** indices,
-                               size_t indices_count,
-                               unsigned int sync_timeout,
-                               unsigned int retries,
-                               size_t max_eps)
+                               size_t indices_count)
     {
         try
         {
@@ -294,10 +279,7 @@ extern "C" {
             if (indices_vec.empty()) return false;
 
             auto* wrapper = reinterpret_cast<AgentSyncProtocolWrapper*>(handle);
-            return wrapper->impl->notifyDataClean(indices_vec,
-                                                  std::chrono::seconds(sync_timeout),
-                                                  retries,
-                                                  max_eps);
+            return wrapper->impl->notifyDataClean(indices_vec);
         }
         catch (const std::exception& ex)
         {

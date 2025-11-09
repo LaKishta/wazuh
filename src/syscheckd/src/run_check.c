@@ -116,7 +116,7 @@ STATIC void handle_fim_disabled(void) {
         bool ret = false;
         while (!ret && !fim_shutdown_process_on())
         {
-            ret = asp_notify_data_clean(syscheck.sync_handle, indices, indices_count, syscheck.sync_response_timeout, FIM_SYNC_RETRIES, syscheck.sync_max_eps);
+            ret = asp_notify_data_clean(syscheck.sync_handle, indices, indices_count);
             if (!ret) {
                 for (uint32_t i = 0; i < syscheck.sync_interval && !fim_shutdown_process_on(); i++) {
                     sleep(1);
@@ -605,7 +605,7 @@ void * fim_run_integrity(__attribute__((unused)) void * args) {
     while (fim_sync_module_running) {
         minfo("Running FIM synchronization.");
 
-        asp_sync_module(syscheck.sync_handle, MODE_DELTA, syscheck.sync_response_timeout, FIM_SYNC_RETRIES, syscheck.sync_max_eps);
+        asp_sync_module(syscheck.sync_handle, MODE_DELTA);
 
         minfo("FIM synchronization finished, waiting for %d seconds before next run.", syscheck.sync_interval);
 
