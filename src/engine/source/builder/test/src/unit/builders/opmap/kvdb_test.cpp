@@ -537,16 +537,16 @@ INSTANTIATE_TEST_SUITE_P(
         TransformDepsT({makeValue(R"("dbname")"), makeValue(R"(1)"), makeRef("ref")},
                        getTrBuilder(getOpBuilderHelperKVDBDecodeBitmask),
                        FAILURE()),
-        TransformDepsT(
-            {makeValue(R"("dbname")"), makeValue(R"("key")"), makeRef("ref")},
-            getTrBuilder(getOpBuilderHelperKVDBDecodeBitmask),
-            FAILURE(
-                [](const BuildersMocks& mocks)
-                {
-                    EXPECT_CALL(*mocks.ctx, validator()).Times(testing::AtLeast(1));
-                    EXPECT_CALL(*mocks.validator, hasField(DotPath("targetField"))).WillOnce(testing::Return(true));
-                    return None {};
-                })),
+        TransformDepsT({makeValue(R"("dbname")"), makeValue(R"("key")"), makeRef("ref")},
+                       getTrBuilder(getOpBuilderHelperKVDBDecodeBitmask),
+                       FAILURE(
+                           [](const BuildersMocks& mocks)
+                           {
+                               EXPECT_CALL(*mocks.ctx, validator()).Times(testing::AtLeast(1));
+                               EXPECT_CALL(*mocks.validator, hasField(DotPath("targetField")))
+                                   .WillOnce(testing::Return(true));
+                               return None {};
+                           })),
         TransformDepsT({makeValue(R"("dbname")"), makeValue(R"("key")"), makeRef("ref")},
                        getTrBuilder(getOpBuilderHelperKVDBDecodeBitmask),
                        FAILURE(

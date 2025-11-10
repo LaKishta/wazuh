@@ -62,7 +62,8 @@ void registerOpBuilders(const std::shared_ptr<Registry>& registry, const Builder
     registry->template add<builders::OpBuilderEntry>(
         "array_not_contains", {schemf::elementValidationToken(), builders::opfilter::opBuilderHelperNotContains});
     registry->template add<builders::OpBuilderEntry>(
-        "array_not_contains_any", {schemf::elementValidationToken(), builders::opfilter::opBuilderHelperNotContainsAny});
+        "array_not_contains_any",
+        {schemf::elementValidationToken(), builders::opfilter::opBuilderHelperNotContainsAny});
     registry->template add<builders::OpBuilderEntry>(
         "int_equal",
         {schemf::JTypeToken::create(json::Json::Type::Number), builders::opfilter::opBuilderHelperIntEqual});
@@ -235,13 +236,16 @@ void registerOpBuilders(const std::shared_ptr<Registry>& registry, const Builder
 
     // Transform builders
     registry->template add<builders::OpBuilderEntry>(
-        "array_append_unique", {schemf::elementValidationToken(), builders::optransform::getArrayAppendBuilder(true, false)});
+        "array_append_unique",
+        {schemf::elementValidationToken(), builders::optransform::getArrayAppendBuilder(true, false)});
     registry->template add<builders::OpBuilderEntry>(
         "array_append", {schemf::elementValidationToken(), builders::optransform::getArrayAppendBuilder(false, false)});
     registry->template add<builders::OpBuilderEntry>(
-        "array_append_unique_any", {schemf::elementValidationToken(), builders::optransform::getArrayAppendBuilder(true, true)});
+        "array_append_unique_any",
+        {schemf::elementValidationToken(), builders::optransform::getArrayAppendBuilder(true, true)});
     registry->template add<builders::OpBuilderEntry>(
-        "array_append_any", {schemf::elementValidationToken(), builders::optransform::getArrayAppendBuilder(false, true)});
+        "array_append_any",
+        {schemf::elementValidationToken(), builders::optransform::getArrayAppendBuilder(false, true)});
     // Transform helpers: Event Field functions
     registry->template add<builders::OpBuilderEntry>(
         "delete", {schemf::runtimeValidation(), builders::opBuilderHelperDeleteField});
@@ -258,8 +262,7 @@ void registerOpBuilders(const std::shared_ptr<Registry>& registry, const Builder
         "rename", {schemf::runtimeValidation(), builders::opBuilderHelperRenameField});
     // Transform helpers: String functions
     registry->template add<builders::OpBuilderEntry>(
-        "split",
-        {schemf::JTypeToken::create(json::Json::Type::String), builders::opBuilderHelperAppendSplitString});
+        "split", {schemf::JTypeToken::create(json::Json::Type::String), builders::opBuilderHelperAppendSplitString});
     registry->template add<builders::OpBuilderEntry>(
         "array_obj_to_mapkv",
         {schemf::JTypeToken::create(json::Json::Type::String), builders::opBuilderHelperArrayObjToMapkv});

@@ -39,8 +39,9 @@ public:
 
         friend std::ostream& operator<<(std::ostream& os, const Parameters& parameters)
         {
-            os << "FieldParameters(" << "Type:" << typeToStr(parameters.type) << std::boolalpha
-                << "Properties:" << parameters.properties.size() << ")";
+            os << "FieldParameters("
+               << "Type:" << typeToStr(parameters.type) << std::boolalpha
+               << "Properties:" << parameters.properties.size() << ")";
 
             return os;
         }
@@ -72,8 +73,8 @@ public:
     friend bool operator!=(const Field& lhs, const Field& rhs) { return !(lhs == rhs); }
     friend std::ostream& operator<<(std::ostream& os, const Field& field)
     {
-        os << "Field(Type:" << typeToStr(field.m_type) << std::boolalpha
-            << ", Properties:" << field.m_properties.size() << ")";
+        os << "Field(Type:" << typeToStr(field.m_type) << std::boolalpha << ", Properties:" << field.m_properties.size()
+           << ")";
 
         return os;
     }

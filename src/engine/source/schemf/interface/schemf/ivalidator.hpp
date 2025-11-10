@@ -27,10 +27,7 @@ public:
      *
      * @return std::shared_ptr<BaseToken>
      */
-    [[nodiscard]] static std::shared_ptr<BaseToken> create()
-    {
-        return std::shared_ptr<BaseToken>(new BaseToken());
-    }
+    [[nodiscard]] static std::shared_ptr<BaseToken> create() { return std::shared_ptr<BaseToken>(new BaseToken()); }
 
     virtual ~BaseToken() = default;
 
