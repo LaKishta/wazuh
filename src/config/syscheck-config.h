@@ -437,10 +437,15 @@ typedef struct _config {
     pthread_rwlock_t directories_lock;
     pthread_mutex_t fim_scan_mutex;
     pthread_mutex_t fim_realtime_mutex;
-#ifndef WIN32
+#ifdef WIN32
+    pthread_mutex_t fim_registry_db_mutex;             /* Used to prevent modifications to the registry tables during the synchronization process */
+#else
     pthread_mutex_t fim_symlink_mutex;
     unsigned int queue_size;                           /* Linux Audit message queue size for whodata */
-#endif
+#endif // WIN32
+    pthread_mutex_t fim_sync_control_mutex;            /* Controls pause/resume coordination with fim_run_integrity */
+    bool fim_pause_requested;                          /* Flag to indicate scans should be paused */
+    bool fim_pausing_is_allowed;                       /* Flag to indicate fim_run_integrity acknowledged pause */
     rtfim *realtime;
     fdb_t *database;
 

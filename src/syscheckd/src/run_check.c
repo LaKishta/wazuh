@@ -601,15 +601,23 @@ DWORD WINAPI fim_run_integrity(__attribute__((unused)) void * args) {
 #else
 void * fim_run_integrity(__attribute__((unused)) void * args) {
 #endif
-    bool sync_result;
 
-    // Initial wait until FIM is started (can be interrupted by flush request)
+    // Initial wait until FIM is started
     for (uint32_t i = 0; i < syscheck.sync_interval && fim_sync_module_running; i++) {
-        // Check for flush request even during initial wait
-        if (atomic_int_get(&fim_flush_in_progress)) {
-            mdebug1("Flush request received during initial wait, starting sync early");
+        // Check for pause request during initial wait
+        w_mutex_lock(&syscheck.fim_sync_control_mutex);
+        bool pause_requested = syscheck.fim_pause_requested;
+        w_mutex_unlock(&syscheck.fim_sync_control_mutex);
+
+        if (pause_requested) {
+            // Acknowledge pause immediately
+            w_mutex_lock(&syscheck.fim_sync_control_mutex);
+            syscheck.fim_pausing_is_allowed = true;
+            w_mutex_unlock(&syscheck.fim_sync_control_mutex);
+            mdebug2("Pause request detected during initial wait");
             break;
         }
+
         sleep(1);
     }
 
@@ -619,13 +627,27 @@ void * fim_run_integrity(__attribute__((unused)) void * args) {
         if (atomic_int_get(&fim_flush_in_progress)) {
             flush_request_detected = true;
         } else {
-            // Wait for sync_interval or until flush is requested
+            // Wait for sync_interval, checking for pause and flush requests
             for (uint32_t i = 0; i < syscheck.sync_interval && fim_sync_module_running; i++) {
-                // Check for flush request every second (atomic ensures thread-safe visibility)
+                // Check for pause request
+                w_mutex_lock(&syscheck.fim_sync_control_mutex);
+                bool pause_requested = syscheck.fim_pause_requested;
+                w_mutex_unlock(&syscheck.fim_sync_control_mutex);
+
+                if (pause_requested) {
+                    // Acknowledge pause immediately
+                    w_mutex_lock(&syscheck.fim_sync_control_mutex);
+                    syscheck.fim_pausing_is_allowed = true;
+                    w_mutex_unlock(&syscheck.fim_sync_control_mutex);
+                }
+
+                // Check for flush request
                 if (atomic_int_get(&fim_flush_in_progress)) {
                     flush_request_detected = true;
+                    mdebug1("Flush request detected during sync wait, breaking early");
                     break;
                 }
+
                 sleep(1);
             }
         }
@@ -635,21 +657,67 @@ void * fim_run_integrity(__attribute__((unused)) void * args) {
             break;
         }
 
-        minfo("Running FIM synchronization.");
+        // Check for pause request
+        w_mutex_lock(&syscheck.fim_sync_control_mutex);
+        bool pause_requested = syscheck.fim_pause_requested;
+        w_mutex_unlock(&syscheck.fim_sync_control_mutex);
 
-        sync_result = asp_sync_module(syscheck.sync_handle,
-                                      MODE_DELTA,
-                                      syscheck.sync_response_timeout,
-                                      FIM_SYNC_RETRIES,
-                                      syscheck.sync_max_eps);
+        // Handle pause: if paused and no flush, skip this iteration
+        if (pause_requested && !flush_request_detected) {
+            // Acknowledge pause
+            w_mutex_lock(&syscheck.fim_sync_control_mutex);
+            syscheck.fim_pausing_is_allowed = true;
+            w_mutex_unlock(&syscheck.fim_sync_control_mutex);
 
-        minfo("FIM synchronization finished, waiting for %d seconds before next run.", syscheck.sync_interval);
+            mdebug2("FIM is paused, skipping sync iteration");
+            continue;
+        }
 
-        // If there's a flush request active, mark it as completed
-        if (flush_request_detected) {
-            int result = sync_result ? 0 : -1;
-            atomic_int_set(&fim_flush_result, result);
-            atomic_int_set(&fim_flush_in_progress, 0);
+        // If paused but flush requested, acknowledge pause and sync without mutexes
+        if (pause_requested && flush_request_detected) {
+            w_mutex_lock(&syscheck.fim_sync_control_mutex);
+            syscheck.fim_pausing_is_allowed = true;
+            w_mutex_unlock(&syscheck.fim_sync_control_mutex);
+
+            minfo("FIM is paused but flush requested, running synchronization without scan mutexes.");
+
+            bool sync_result = asp_sync_module(syscheck.sync_handle,
+                                          MODE_DELTA,
+                                          syscheck.sync_response_timeout,
+                                          FIM_SYNC_RETRIES,
+                                          syscheck.sync_max_eps);
+
+            minfo("FIM synchronization finished, waiting for %d seconds before next run.", syscheck.sync_interval);
+
+            // If there's a flush request active, mark it as completed
+            if (flush_request_detected) {
+                int result = sync_result ? 0 : -1;
+                atomic_int_set(&fim_flush_result, result);
+                atomic_int_set(&fim_flush_in_progress, 0);
+            }
+        } else {
+            // Not paused, acquire mutexes and sync normally
+            w_mutex_lock(&syscheck.fim_scan_mutex);
+            w_mutex_lock(&syscheck.fim_realtime_mutex);
+            #ifdef WIN32
+            w_mutex_lock(&syscheck.fim_registry_db_mutex);
+            #endif
+
+            minfo("Running FIM synchronization.");
+
+            asp_sync_module(syscheck.sync_handle,
+                            MODE_DELTA,
+                            syscheck.sync_response_timeout,
+                            FIM_SYNC_RETRIES,
+                            syscheck.sync_max_eps);
+
+            minfo("FIM synchronization finished, waiting for %d seconds before next run.", syscheck.sync_interval);
+
+            #ifdef WIN32
+            w_mutex_unlock(&syscheck.fim_registry_db_mutex);
+            #endif
+            w_mutex_unlock(&syscheck.fim_realtime_mutex);
+            w_mutex_unlock(&syscheck.fim_scan_mutex);
         }
     }
 

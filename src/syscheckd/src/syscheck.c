@@ -111,9 +111,14 @@ void fim_initialize() {
     w_rwlock_init(&syscheck.directories_lock, NULL);
     w_mutex_init(&syscheck.fim_scan_mutex, NULL);
     w_mutex_init(&syscheck.fim_realtime_mutex, NULL);
-#ifndef WIN32
-    w_mutex_init(&syscheck.fim_symlink_mutex, NULL)
+#ifdef WIN32
+    w_mutex_init(&syscheck.fim_registry_db_mutex, NULL);
+#else
+    w_mutex_init(&syscheck.fim_symlink_mutex, NULL);
 #endif
+    w_mutex_init(&syscheck.fim_sync_control_mutex, NULL);
+    syscheck.fim_pause_requested = false;
+    syscheck.fim_pausing_is_allowed = false;
 
     notify_scan = syscheck.notify_first_scan;
 
