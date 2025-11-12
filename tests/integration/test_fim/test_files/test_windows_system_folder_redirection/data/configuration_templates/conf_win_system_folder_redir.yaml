@@ -13,6 +13,16 @@
               - recursion_level: 0
         - windows_audit_interval:
             value: 500
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
 
     - section: sca
       elements:

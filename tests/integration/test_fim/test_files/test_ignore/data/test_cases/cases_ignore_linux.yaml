@@ -14,6 +14,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -35,6 +45,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'yes'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -60,6 +80,16 @@
             - check_all: 'yes'
             - whodata: 'yes'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -83,6 +113,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -104,6 +144,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'yes'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -125,6 +175,16 @@
             - check_all: 'yes'
             - whodata: 'yes'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -152,6 +212,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -177,6 +247,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'yes'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -202,6 +282,16 @@
             - check_all: 'yes'
             - whodata: 'yes'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -225,6 +315,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -246,6 +346,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'yes'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -267,6 +377,16 @@
             - check_all: 'yes'
             - whodata: 'yes'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -290,6 +410,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -311,6 +441,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'yes'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -332,6 +472,16 @@
             - check_all: 'yes'
             - whodata: 'yes'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -353,6 +503,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -372,6 +532,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'yes'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -391,6 +561,16 @@
             - check_all: 'yes'
             - whodata: 'yes'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -414,6 +594,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -435,6 +625,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'yes'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -456,6 +656,16 @@
             - check_all: 'yes'
             - whodata: 'yes'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, testfile]
@@ -479,6 +689,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, btestfile]
@@ -501,6 +721,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'yes'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, btestfile]
@@ -523,6 +753,16 @@
             - check_all: 'yes'
             - whodata: 'yes'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, btestfile]
@@ -547,6 +787,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, btestfile]
@@ -569,6 +819,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'yes'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, btestfile]
@@ -591,6 +851,16 @@
             - check_all: 'yes'
             - whodata: 'yes'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, btestfile]
@@ -603,6 +873,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -619,6 +899,16 @@
             - check_all: 'yes'
             - whodata: 'no'
             - realtime: 'no'
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
   metadata:
     folder_to_monitor: !!python/object/apply:os.path.join [/testdir1]
     file_to_monitor: !!python/object/apply:os.path.join [/testdir1, btestfile]
@@ -631,6 +921,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -657,6 +957,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -683,6 +993,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -707,6 +1027,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
       SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -729,6 +1059,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -751,6 +1091,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -775,6 +1125,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -797,6 +1157,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
       SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -819,6 +1189,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -841,6 +1221,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '/testdir1/ignore_this'
         - directories:
@@ -861,6 +1251,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '/testdir1/ignore_this'
         - directories:
@@ -881,6 +1281,16 @@
   description: Check ignore with 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -905,6 +1315,16 @@
   description: Check ignore with 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - ignore:
@@ -927,6 +1347,16 @@
   description: Check ignore with 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - ignore:
@@ -949,6 +1379,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -972,6 +1412,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -993,6 +1443,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -1014,6 +1474,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1037,6 +1507,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$|.ignore2$'
           attributes:
@@ -1058,6 +1538,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$|.ignore2$'
           attributes:
@@ -1079,6 +1569,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1106,6 +1606,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -1131,6 +1641,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -1156,6 +1676,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1179,6 +1709,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^ignore_prefix'
           attributes:
@@ -1200,6 +1740,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^ignore_prefix'
           attributes:
@@ -1221,6 +1771,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1244,6 +1804,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^/testdir1/ignore_prefix'
           attributes:
@@ -1265,6 +1835,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^/testdir1/ignore_prefix'
           attributes:
@@ -1286,6 +1866,16 @@
   description: Check ignore pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1307,6 +1897,16 @@
   description: Check ignore pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - directories:
@@ -1326,6 +1926,16 @@
   description: Check ignore pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - directories:
@@ -1345,6 +1955,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1368,6 +1988,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       -  ignore:
@@ -1389,6 +2019,16 @@
   description: Check ignore2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       -  ignore:
@@ -1410,6 +2050,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1434,6 +2084,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -1456,6 +2116,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -1478,6 +2148,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1502,6 +2182,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$|.ignore2$'
           attributes:
@@ -1524,6 +2214,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$|.ignore2$'
           attributes:
@@ -1546,6 +2246,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1574,6 +2284,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -1600,6 +2320,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -1626,6 +2356,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1650,6 +2390,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^ignore_prefix'
           attributes:
@@ -1672,6 +2422,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^ignore_prefix'
           attributes:
@@ -1694,6 +2454,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1718,6 +2488,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^/testdir1/ignore_prefix'
           attributes:
@@ -1740,6 +2520,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^/testdir1/ignore_prefix'
           attributes:
@@ -1762,6 +2552,16 @@
   description: Check ignore pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1784,6 +2584,16 @@
   description: Check ignore pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - directories:
@@ -1804,6 +2614,16 @@
   description: Check ignore pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - directories:
@@ -1824,6 +2644,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1848,6 +2678,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - ignore:
@@ -1870,6 +2710,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - ignore:
@@ -1892,7 +2742,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
-
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1917,6 +2776,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -1939,6 +2808,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -1961,6 +2840,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -1985,6 +2874,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: ".ignore$|.ignore2$"
           attributes:
@@ -2007,6 +2906,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: ".ignore$|.ignore2$"
           attributes:
@@ -2029,6 +2938,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2057,6 +2976,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -2083,6 +3012,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -2109,6 +3048,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2132,6 +3081,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -2153,6 +3112,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -2178,6 +3147,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2201,6 +3180,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$|.ignore2$'
             attributes:
@@ -2222,6 +3211,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$|.ignore2$'
             attributes:
@@ -2243,6 +3242,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2270,6 +3279,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -2295,6 +3314,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -2320,6 +3349,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2343,6 +3382,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -2364,6 +3413,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -2385,6 +3444,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2408,6 +3477,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -2429,6 +3508,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -2450,6 +3539,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2471,6 +3570,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '/testdir1/ignore_this'
         - directories:
@@ -2490,6 +3599,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '/testdir1/ignore_this'
         - directories:
@@ -2509,6 +3628,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2532,6 +3661,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '/testdir1/ignore_this'
         - ignore:
@@ -2553,6 +3692,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '/testdir1/ignore_this'
         - ignore:
@@ -2574,6 +3723,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2598,6 +3757,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -2620,6 +3789,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -2642,6 +3821,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2666,6 +3855,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$|.ignore2$'
             attributes:
@@ -2688,6 +3887,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
       SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$|.ignore2$'
             attributes:
@@ -2710,6 +3919,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2738,6 +3957,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -2764,6 +3993,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -2790,6 +4029,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2814,6 +4063,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
       SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -2836,6 +4095,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -2858,6 +4127,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2882,6 +4161,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -2904,6 +4193,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
       SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -2926,6 +4225,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -2948,6 +4257,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '/testdir1/ignore_this'
         - directories:
@@ -2968,6 +4287,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '/testdir1/ignore_this'
         - directories:
@@ -2988,6 +4317,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3012,6 +4351,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - ignore:
@@ -3034,6 +4383,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - ignore:
@@ -3056,6 +4415,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3079,6 +4448,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -3100,6 +4479,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -3121,6 +4510,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3144,6 +4543,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$|.ignore2$'
           attributes:
@@ -3165,6 +4574,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$|.ignore2$'
           attributes:
@@ -3186,6 +4605,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3213,6 +4642,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -3238,6 +4677,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -3263,6 +4712,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3286,6 +4745,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^ignore_prefix'
           attributes:
@@ -3307,6 +4776,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^ignore_prefix'
           attributes:
@@ -3328,6 +4807,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3351,6 +4840,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^/testdir1/ignore_prefix'
           attributes:
@@ -3372,6 +4871,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^/testdir1/ignore_prefix'
           attributes:
@@ -3393,6 +4902,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3414,6 +4933,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - directories:
@@ -3433,6 +4962,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - directories:
@@ -3452,6 +4991,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3475,6 +5024,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       -  ignore:
@@ -3496,6 +5055,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       -  ignore:
@@ -3517,6 +5086,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3541,6 +5120,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -3563,6 +5152,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -3585,6 +5184,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3609,6 +5218,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$|.ignore2$'
           attributes:
@@ -3631,6 +5250,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$|.ignore2$'
           attributes:
@@ -3653,6 +5282,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3681,6 +5320,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -3707,6 +5356,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -3733,6 +5392,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3757,6 +5426,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^ignore_prefix'
           attributes:
@@ -3779,6 +5458,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^ignore_prefix'
           attributes:
@@ -3801,6 +5490,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3825,6 +5524,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^/testdir1/ignore_prefix'
           attributes:
@@ -3847,6 +5556,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^/testdir1/ignore_prefix'
           attributes:
@@ -3869,6 +5588,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3891,6 +5620,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - directories:
@@ -3911,6 +5650,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - directories:
@@ -3931,6 +5680,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -3955,6 +5714,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - ignore:
@@ -3977,6 +5746,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - ignore:
@@ -3999,6 +5778,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -4023,6 +5812,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -4045,6 +5844,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -4067,6 +5876,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -4091,6 +5910,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: ".ignore$|.ignore2$"
           attributes:
@@ -4113,6 +5942,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: ".ignore$|.ignore2$"
           attributes:
@@ -4135,6 +5974,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -4163,6 +6012,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4189,6 +6048,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4216,6 +6085,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -4240,6 +6119,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4262,6 +6151,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4288,6 +6187,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -4312,6 +6221,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$|.ignore2$'
             attributes:
@@ -4334,6 +6253,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$|.ignore2$'
             attributes:
@@ -4356,6 +6285,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -4384,6 +6323,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4410,6 +6359,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4436,6 +6395,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -4460,6 +6429,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -4482,6 +6461,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -4504,6 +6493,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -4528,6 +6527,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -4550,6 +6559,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -4572,6 +6591,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -4596,6 +6625,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -4618,6 +6657,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -4640,6 +6689,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -4664,6 +6723,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: ".ignore$|.ignore2$"
           attributes:
@@ -4686,6 +6755,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: ".ignore$|.ignore2$"
           attributes:
@@ -4708,6 +6787,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -4736,6 +6825,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4762,6 +6861,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4788,6 +6897,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -4812,6 +6931,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4834,6 +6963,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4860,6 +6999,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -4884,6 +7033,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$|.ignore2$'
             attributes:
@@ -4906,6 +7065,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$|.ignore2$'
             attributes:
@@ -4928,6 +7097,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -4956,6 +7135,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -4982,6 +7171,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -5008,6 +7207,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -5032,6 +7241,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -5054,6 +7273,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -5076,6 +7305,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -5100,6 +7339,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -5122,6 +7371,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -5144,6 +7403,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -5167,6 +7436,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -5188,6 +7467,16 @@
   description: Check ignore sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -5209,6 +7498,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -5232,6 +7531,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$|.ignore2$'
           attributes:
@@ -5253,6 +7562,16 @@
   description: Check ignore sregex with OR triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$|.ignore2$'
           attributes:
@@ -5274,6 +7593,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -5301,6 +7630,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -5326,6 +7665,16 @@
   description: Check ignore with 2 sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -5351,6 +7700,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -5374,6 +7733,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^ignore_prefix'
           attributes:
@@ -5395,6 +7764,16 @@
   description: Check ignore with sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^ignore_prefix'
           attributes:
@@ -5416,6 +7795,16 @@
   description: Check ignore sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -5439,6 +7828,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^/testdir1/ignore_prefix'
           attributes:
@@ -5460,6 +7859,16 @@
   description: Check ignore with sregex with path and prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '^/testdir1/ignore_prefix'
           attributes:
@@ -5481,6 +7890,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -5502,6 +7921,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - directories:
@@ -5521,6 +7950,16 @@
   description: Check ignore with pattern with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       - directories:
@@ -5540,6 +7979,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -5563,6 +8012,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       -  ignore:
@@ -5584,6 +8043,16 @@
   description: Check ignore 2 patterns with path triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '/testdir1/ignore_this'
       -  ignore:
@@ -5605,6 +8074,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -5628,6 +8107,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: ".ignore$|.ignore2$"
           attributes:
@@ -5649,6 +8138,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: ".ignore$|.ignore2$"
           attributes:
@@ -5670,6 +8169,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -5697,6 +8206,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -5722,6 +8241,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -5747,6 +8276,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -5770,6 +8309,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -5791,6 +8340,16 @@
   description: Check ignore with sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: '.ignore$'
           attributes:
@@ -5812,6 +8371,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - frequency:
           value: 3
       - ignore:
@@ -5835,6 +8404,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: ".ignore$|.ignore2$"
           attributes:
@@ -5856,6 +8435,16 @@
   description: Check ignore with sregex with OR no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+      - synchronization:
+        # Disabling sync since asp_sync_module isn't simulated yet
+        # fim_run_registry waits on that method to complete and
+        # this makes the first file monitor events take a while to appear
+        # making the invalid_character tests fail
+          elements:
+            - interval:
+                value: 5
+            - enabled:
+                value: "no"
       - ignore:
           value: ".ignore$|.ignore2$"
           attributes:
@@ -5877,6 +8466,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -5904,6 +8503,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -5929,6 +8538,16 @@
   description: Check ignore with 2 sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '.ignore$'
             attributes:
@@ -5954,6 +8573,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -5977,6 +8606,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -5998,6 +8637,16 @@
   description: Check ignore sregex with prefix triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^ignore_prefix'
             attributes:
@@ -6019,6 +8668,16 @@
   description: Check ignore sregex with path and prefix no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -6042,6 +8701,16 @@
   description: Check ignore sregex with path and prefix no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -6063,6 +8732,16 @@
   description: Check ignore sregex with path and prefix no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/ignore_prefix'
             attributes:
@@ -6084,6 +8763,16 @@
   description: Check ignore with empty sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -6107,6 +8796,16 @@
   description: Check ignore with empty sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: ''
             attributes:
@@ -6128,6 +8827,16 @@
   description: Check ignore with empty sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: ''
             attributes:
@@ -6149,6 +8858,16 @@
   description: Check ignore with empty sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -6172,6 +8891,16 @@
   description: Check ignore with empty sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: ''
             attributes:
@@ -6193,6 +8922,16 @@
   description: Check ignore with empty sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: ''
             attributes:
@@ -6214,6 +8953,16 @@
   description: Check ignore with negated sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -6238,6 +8987,16 @@
   description: Check ignore with negated sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '!mytest'
             attributes:
@@ -6259,6 +9018,16 @@
   description: Check ignore with negated sregex triggers event because there is no match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '!mytest'
             attributes:
@@ -6280,6 +9049,16 @@
   description: Check ignore with negated sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -6303,6 +9082,16 @@
   description: Check ignore with negated sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '!mytest'
             attributes:
@@ -6324,6 +9113,16 @@
   description: Check ignore with negated sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '!mytest'
             attributes:
@@ -6345,6 +9144,16 @@
   description: Check ignore with incomplete sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -6368,6 +9177,16 @@
   description: Check ignore with incomplete sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/f'
             attributes:
@@ -6389,6 +9208,16 @@
   description: Check ignore with incomplete sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/f'
             attributes:
@@ -6410,6 +9239,16 @@
   description: Check ignore with incomplete sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -6433,6 +9272,16 @@
   description: Check ignore with incomplete sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/f'
             attributes:
@@ -6454,6 +9303,16 @@
   description: Check ignore with incomplete sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '^/testdir1/f'
             attributes:
@@ -6475,6 +9334,16 @@
   description: Check ignore with root sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - frequency:
             value: 3
         - ignore:
@@ -6498,6 +9367,16 @@
   description: Check ignore with root sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '/'
             attributes:
@@ -6519,6 +9398,16 @@
   description: Check ignore with root sregex no triggers event because there is match
   configuration_parameters:
     SYSCHECK:
+        - synchronization:
+          # Disabling sync since asp_sync_module isn't simulated yet
+          # fim_run_registry waits on that method to complete and
+          # this makes the first file monitor events take a while to appear
+          # making the invalid_character tests fail
+            elements:
+              - interval:
+                  value: 5
+              - enabled:
+                  value: "no"
         - ignore:
             value: '/'
             attributes:
