@@ -24,7 +24,7 @@ struct AgentSyncProtocolWrapper
     /// @param db_path Path to the SQLite database file for this protocol instance.
     /// @param logger Logger function
     /// @param mq_funcs Structure containing the MQ callback functions provided from C.
-    /// @param syncEndDelay Delay in seconds for synchronization messages.
+    /// @param syncEndDelay Delay for synchronization end message in seconds
     /// @param timeout Default timeout for synchronization operations.
     /// @param retries Default number of retries for synchronization operations.
     /// @param maxEps Default maximum events per second for synchronization operations.
@@ -40,8 +40,8 @@ extern "C" {
     {
         try
         {
-            // TODO: Find a way to not include mq_funcs check for server
 #if CLIENT
+
             if (!mq_funcs || !db_path || !module || !logger) return nullptr;
 
 #else
@@ -49,7 +49,6 @@ extern "C" {
             if (!db_path || !module || !logger) return nullptr;
 
 #endif
-
             LoggerFunc logger_wrapper =
                 [logger](modules_log_level_t level, const std::string & msg)
             {
